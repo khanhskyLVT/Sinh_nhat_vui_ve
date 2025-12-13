@@ -88,7 +88,7 @@ you give to every one who knows you">
 </head>
 
 <body>
-	
+<audio id="myAudio" src="media.mp3" autoplay loop muted></audio>
 <div id="screen" style="position:relative; overflow:hidden;">
 
     <!-- nền mờ -->
@@ -191,6 +191,26 @@ you give to every one who knows you">
 			$("#code").typewriter();
 		}
 	</script>
+	<script>
+    var audio = document.getElementById('myAudio');
+
+    // Cố gắng phát nhạc ngay lập tức (sẽ bị tắt tiếng)
+    document.addEventListener('DOMContentLoaded', function() {
+        audio.play().catch(function(error) {
+            console.log("Autoplay failed (muted).");
+        });
+    });
+
+    // Bật tiếng khi người dùng tương tác lần đầu
+    document.body.addEventListener('click', function() {
+        if (audio.muted) {
+            audio.muted = false; // Bật tiếng
+            audio.play().catch(function(error) {
+                 console.log("Failed to play after click.");
+            });
+        }
+    }, { once: true }); // Chỉ chạy 1 lần
+</script>
 </body>
 <!-- Made with love by Khánh Sky -->
 </html>
