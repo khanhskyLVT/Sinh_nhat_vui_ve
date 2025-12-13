@@ -27,7 +27,7 @@ width: 100%;
     display: flex;
     justify-content: center; /* Căn giữa code và heart so với nhau */
     align-items: flex-start; /* Giữ code và heart căn trên */
-    margin-bottom: 20px; /* Tạo khoảng cách với copyright */
+    margin-bottom: 10px; /* Tạo khoảng cách với copyright */
 }
 
 /* ===== HEART ===== */
