@@ -1,0 +1,24 @@
+@keyframes beat {
+    0% {
+        /* SỬA LỖI: Gộp scale và translateY vào cùng một thuộc tính transform */
+        transform: scale(1) translateY(100px); 
+    }
+    50% {
+        /* SỬA LỖI */
+        transform: scale(1.5) translateY(-400px);
+    }
+    100%{
+        /* SỬA LỖI */
+        transform: scale(1) translateY(100px); 
+    }
+}
+
+
+.heart {
+    position: relative;
+    width: 125px;
+    height: 90px;
+    /* Áp dụng hoạt ảnh đã sửa lỗi */
+    animation: beat 8s infinite; 
+}
+/* ... (Giữ nguyên các khối :before và :after) ... */
