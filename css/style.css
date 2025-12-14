@@ -182,8 +182,8 @@ width: 100%;
 }
     #code{
         width: 55vh;
-        min-height: 63%;
-        top: -130px;
+        min-height: 64%;
+        top: -130px!important;
         font-family:"Consolas","Monaco","Courier New","sans-serif";
         font-size:12px;
         color:#eaeaf0;
