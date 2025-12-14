@@ -176,13 +176,13 @@ width: 100%;
     font-size:12px;
     /* KHÔNG dùng overflow:auto ở đây để tránh scroll không cần thiết */
     color:#eaeaf0;
-    max-height: 80vh; /* Đảm bảo body có chiều cao ít nhất bằng màn hình */
+    max-height: 90vh; /* Đảm bảo body có chiều cao ít nhất bằng màn hình */
     display: flex; /* Bắt đầu sử dụng Flexbox từ body */
     flex-direction: column;
 }
     #code{
         width: 55vh;
-        height: 500px;
+        min-height: 63%;
         top: -130px;
         font-family:"Consolas","Monaco","Courier New","sans-serif";
         font-size:12px;
@@ -226,4 +226,3 @@ width: 100%;
     }
     }
 }
-
